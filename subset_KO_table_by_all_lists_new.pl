@@ -12,7 +12,7 @@ use strict;
 
 my $length = @ARGV;
 if($length != 3){die "\n\nUSAGE: 'perl subset_KO_table_by_all_lists_new.pl <Path_to_KO_lists> <counts_file> <Output_Directory>'\n
-You should not include the final backslash on your path\nEG: 'perl subset_KO_table_by_all_lists_new.pl ~/Genome_KOs/KO_lists ~/Genome_KOs/counts.file ~/GenomeKOs/new_directory\n\n"}
+You should not include the final backslash on your path\nYou also probably should create the output directory manually first.\n\nEG: 'perl subset_KO_table_by_all_lists_new.pl ~/Genome_KOs/KO_lists ~/Genome_KOs/counts.file ~/GenomeKOs/new_directory\n\n"}
 
 my $base_dir_list=shift(@ARGV);
 my $count_file = shift(@ARGV);
