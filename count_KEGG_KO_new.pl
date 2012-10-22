@@ -4,6 +4,14 @@ use strict;
 use warnings;
 use Data::Dumper;
 
+#####
+#Written by Jason Steen, Australian Centre for Ecogenomics, 22/10/2012
+#This script takes a directory of KO counts from IMG, and converts it into a count table for all organisms and KO's present in said directory
+#Errors/ommisions/suggestions j.steen2@uq.edu.au
+####
+
+
+
 my $length = @ARGV;
 if($length != 4){die "\n\nUSAGE: 'perl count_KEGG_KO.pl <Path_to_input_files> <Output_file_prefix> <column containing Kegg pathways> <column containing counts>'\n
 You should not include the final backslash on your path\nColumn numbers are 0 indexed\n\nEG: 'perl count_KEGG_KO_new.pl ~/Genome_KOs my_project 0 3\n\n"}
