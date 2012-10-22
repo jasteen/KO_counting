@@ -1,0 +1,4 @@
+information
+gene
+Kegg_identifier
+EC_number
