@@ -1,4 +1,4 @@
-##### Metabolism_in prokaryotes#########
+##### General R heatmaps for KO counts tables #########
 library("ape")
 library("RColorBrewer")
 library("gplots")
@@ -64,11 +64,18 @@ y <- brewer.pal(length(e)-1, "Blues")
 #x <- heatmap.2(c, Rowv=FALSE, Colv=TRUE, dendrogram='column', scale='none', density='none', breaks=c(e), col=y, trace='none', cexRow=0.6, RowSideColors=rsc, ColSideColors=csc, labCol=col.labels)
 
 #draw the heatmap.  no dendrograms
-x <- heatmap.2(c, Rowv=FALSE, Colv=FALSE, dendrogram='none', scale='none', density='none', breaks=c(e), col=y, trace='none', cexRow=0.6, RowSideColors=rsc, ColSideColors=csc, labCol=col.labels)
+#x <- heatmap.2(c, Rowv=FALSE, Colv=FALSE, dendrogram='none', scale='none', density='none', breaks=c(e), col=y, trace='none', cexRow=0.6, RowSideColors=rsc, ColSideColors=csc, labCol=col.labels)
 
 
 #draw the heatmap.  no dendrograms
 #x <- heatmap.2(c, Rowv=FALSE, Colv=FALSE, dendrogram='none', scale='none', density='none', breaks=c(e), col=y, trace='none', cexRow=0.6, RowSideColors=rsc, ColSideColors=csc, labCol=col.labels)
+
+
+
+
+#####################
+#if you're having trouble following along at home, the following script works beautifully on the files in ./R_test_files
+
 
 
 
